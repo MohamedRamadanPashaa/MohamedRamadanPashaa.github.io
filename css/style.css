@@ -310,7 +310,6 @@ body {
 /* End Services */
 
 /* Start Services */
-
 .portfolio {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
@@ -326,10 +325,12 @@ body {
 
 .portfolio .portfolio-content .card {
   background-color: white;
+  border-radius: 10px;
 }
 
 .portfolio .portfolio-content .card img {
   max-width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 .portfolio .portfolio-content .card .info {
   padding: 20px;
@@ -366,9 +367,6 @@ body {
   .about .about-content {
     flex-direction: column;
     text-align: center;
-  }
-  .about .about-content .image {
-    margin-bottom: 0 auto 50px;
   }
 }
 .about .about-content .image {
@@ -413,17 +411,18 @@ body {
 .about .about-content .text {
   /* العرض كله وشيل منه 500 للصورة اللي جنبه */
   flex-basis: calc(100% - 500px);
+  line-height: var(--line-height);
 }
 
 .about .about-content .text p:first-child {
   font-weight: bold;
-  line-height: var(--line-height);
   margin-bottom: 30px;
 }
 .about .about-content .text hr {
   width: 50%;
+  /* علشان اقدر اطبق عليه كل الخواص */
   display: inline-block;
-  border-color: var(--main-color);
+  border-top: var(--main-color) 3px solid;
 }
 .about .about-content .text p:last-child {
   margin-top: 30px;
@@ -458,11 +457,15 @@ body {
 }
 .contact .info .social {
   color: var(--secondary-color);
-  margin-top: 25px;
+  margin-top: 15px;
   font-weight: 300;
   font-size: 80%;
 }
+.contact .info .social p {
+  font-size: 15px;
+}
 .contact .info .social i {
+  font-size: 30px;
   cursor: pointer;
   padding-left: 5px;
   transition: var(--transition);
