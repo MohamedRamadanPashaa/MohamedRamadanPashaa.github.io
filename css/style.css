@@ -279,6 +279,17 @@ body {
   color: var(--paragraph-color);
   font-weight: 300;
   line-height: var(--line-height);
+  height: 100px;
+}
+@media (max-width: 991px) {
+  .services .services-content .srv p {
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .services .services-content .srv p:hover {
+    overflow: visible;
+  }
 }
 
 .services .services-content .image {
